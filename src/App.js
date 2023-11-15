@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Sign from './components/SignIn/Sign.jsx';
+import Welcome from './components/Welcome/Welcome.jsx'
+import Create from './components/Create/Create.jsx';
+import Settings from './components/Settings/Settings.jsx';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <>
+  <Welcome/>
+ <Sign/>
+  <Create/>
+  <Settings/>
+ </>
   );
 }
 
